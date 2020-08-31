@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/home"> <img src="assets/images/Logo.png" alt="logo" style="widows: 2px;">
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/FormForNewEmployer">New Employer</a></li>
+      <li><a routerLink="/ListOfEmployers">Our Employers</a></li>
+      <li><a routerLink="/SeachDeleteComponent">Search and delete</a></li>
+    </ul>
+  </div>
+</nav>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">           
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let employer of Employers"> 
+        <td>{{employer.id}}</td>
+        <td>{{employer.firstName}}</td>
+        <td>{{employer.lastName}}</td>
+        <td>{{employer.role}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
+
+
+
